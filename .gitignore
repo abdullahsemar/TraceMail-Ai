@@ -1,0 +1,105 @@
+# ==============================================================================
+# TRACEMAIL AI - GITIGNORE
+# ==============================================================================
+
+# --- Environment & Secret Configuration ---
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# --- Google OAuth Credentials & Tokens ---
+google_tokens.json
+google_oauth.local.json
+client_secret*.json
+credentials.json
+backend/config/google_tokens.json
+backend/config/google_oauth.local.json
+backend/config/client_secret*.json
+backend/config/credentials.json
+
+# --- Database & State Files ---
+*.db
+*.sqlite
+*.sqlite3
+backend/tracemail.db
+backend/*.db
+
+# --- Email Evidence, Quarantine & Reports ---
+*.eml
+*.msg
+evidence/
+evidence_storage/*
+!evidence_storage/.gitkeep
+backend/evidence_storage/*
+!backend/evidence_storage/.gitkeep
+raw_email/
+raw_emails/
+quarantine/
+reports/*
+!reports/.gitkeep
+backend/reports/*
+!backend/reports/.gitkeep
+logs/
+*.log
+
+# --- Python & Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+backend/venv/
+backend/.venv/
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+backend/.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# --- Node.js & Frontend ---
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Machine Learning & Hugging Face Cache ---
+.cache/
+huggingface/
+transformers_cache/
+model_cache/
+backend/app/engines/model_artifacts/*
+!backend/app/engines/model_artifacts/.gitkeep
+*.joblib
+*.pkl
+*.pt
+*.bin
+*.onnx
+
+# --- GeoIP Databases ---
+*.mmdb
+data/GeoLite2-*.mmdb
+
+# --- IDE & OS Generated Files ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini

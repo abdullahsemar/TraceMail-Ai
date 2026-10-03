@@ -1,0 +1,30 @@
+# Environment Variables & Secrets
+.env
+backend/.env
+*.env
+*.env.local
+
+# Google OAuth Secrets & Tokens
+config/google_tokens.json
+config/google_oauth.local.json
+config/tokens_*.json
+*.token.json
+client_secret*.json
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.pytest_cache/
+
+# Local Database & Storage
+*.db
+*.sqlite3
+evidence_storage/
+reports/

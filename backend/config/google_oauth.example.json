@@ -1,0 +1,6 @@
+{
+  "client_id": "YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com",
+  "client_secret": "YOUR_GOOGLE_CLIENT_SECRET",
+  "redirect_uri": "http://localhost:8000/api/connectors/gmail/callback",
+  "pubsub_topic": "projects/YOUR_GCP_PROJECT/topics/tracemail-gmail-inbox-events"
+}
